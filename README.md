@@ -10,6 +10,7 @@ I have a Runner class that I linked with my feature file and their step implemen
 In my framework I have 2 suits:  
 - @Smoke
 - @Regression
+
 I can easily execute them with maven commands:
 - mvn clean test -Dcucumber.options="--tags @Smoke"
 - mvn clean test -Dcucumber.options="--tags @Regression"
