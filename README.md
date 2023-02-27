@@ -7,8 +7,9 @@ I used SeleniumWebDriver and WbeDriverManager to automate my web browser testing
 I also implemented POM ans Singleton design paterns and used OOP principles. I centralized all web elements and page related methods in object repositories using PageFactory Class. Singleton allowed me to create a single driver instance  across my framework.
 I have a Hooks Class where I keep my @After annotation to quit my driver that run before after each scenario.
 I have a Runner class that I linked with my feature file and their step implementation in order to run scenarios. On top of each scenario I can put a @ -> tag that will defind my test suits. I can easily run my test suit in the Runner class, we can specify which tag (and so as the scenario(s)) I want to execute.
-In my framework I have 2 suits:  @Smoke
-                                 @Regression
+In my framework I have 2 suits:  
+- @Smoke
+- @Regression
 I can easily execute them with maven commands:
 - mvn clean test -Dcucumber.options="--tags @Smoke"
 - mvn clean test -Dcucumber.options="--tags @Regression"
