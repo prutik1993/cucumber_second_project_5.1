@@ -1,7 +1,7 @@
 # How my framework works
 
-For this priject I created BDD Framework (Behavior Driven Development). 
-I used Java as a programming language and Maven as a build tool. Maven comes with easy folder stracture that help keep all my classes organized. Also Maven has pom.xml file, where I stored all plugins, goals, dependencies, profiles, versions. Maven also provide Target folder that stores all reports. I integrated Maven-Surefire-Plugin in order to execute the specific suites with tags using Maven commands (mvn clean test -Dcucumber.options="--tags @Smoke", mvn clean test -Dcucumber.options="--tags @Regression") and generate reports that will be store under Target folder that I mantion before.
+For this project I created BDD Framework (Behavior Driven Development). 
+I used Java as a programming language and Maven as a build tool. Maven comes with easy folder stracture that help keep all my classes organized. Also Maven has pom.xml file, where I stored all plugins, goals, dependencies, profiles, versions. Maven also provide Target folder where all reports are stored. I integrated Maven-Surefire-Plugin in order to execute the specific suites with tags using Maven commands (mvn clean test -Dcucumber.options="--tags @Smoke", mvn clean test -Dcucumber.options="--tags @Regression") and generate reports that will be store under Target folder that I mantion before.
 My framework integrated with JUnit for the Annotations to control test flow, Assertions for verification and reports. 
 I used SeleniumWebDriver and WbeDriverManager to automate my web browser testing. 
 I also implemented POM ans Singleton design paterns and used OOP principles. I centralized all web elements and page related methods in object repositories using PageFactory Class. Singleton allowed me to create a single driver instance  across my framework.
